@@ -75,7 +75,7 @@ class Datacamp:
         self.username = None
         self.password = None
         self.token = None
-        self.has_active_subscription = False
+        self.active_products = None
         self.loggedin = False
         self.login_data = None
         self.profile_data = None
@@ -483,14 +483,14 @@ class Datacamp:
             return
         Logger.info("Hi, " + (data["first_name"] or data["last_name"] or data["email"]))
 
-        if data["has_active_subscription"]:
+        if data["active_products"]:
             Logger.info("Active subscription found")
         else:
             Logger.warning("No active subscription found")
 
         self.loggedin = True
         self.login_data = data
-        self.has_active_subscription = data["has_active_subscription"]
+        self.active_products = data["active_products"]
 
         self.session.save()
 
