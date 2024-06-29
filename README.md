@@ -27,7 +27,7 @@
 
 ## Update
 
-Datacamp Downloader V3.2 is now available. The major change is that the tool now uses selenium for the backend. See changelog for version [3.0](https://github.com/TRoboto/datacamp-downloader/pull/39), [3.1](https://github.com/TRoboto/datacamp-downloader/pull/42)
+Datacamp Downloader V3.2 is working currently with chrome version 114 or 114.0.5735.199 and python 3.9. The major change is that the tool now uses selenium for the backend. See changelog for version [3.0](https://github.com/TRoboto/datacamp-downloader/pull/39), [3.1](https://github.com/TRoboto/datacamp-downloader/pull/42)
 and [3.2](https://github.com/TRoboto/datacamp-downloader/pull/47).
 
 ## Description
