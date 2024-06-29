@@ -28,6 +28,6 @@ setup(
     setup_requires=["setuptools-git"],
     packages=find_packages(where="src"),
     include_package_data=True,
-    python_requires=">=3.6",
+    python_requires="==3.9",
     entry_points={"console_scripts": ["datacamp=datacamp_downloader.downloader:app"]},
 )
